@@ -55,12 +55,7 @@ class FileProcessing:
             print(f"Файл {filename} не является директорией")
 
     def cd(self, filename: str):
-        """
-        Перемещение между папками
-        - заход в папку по имени
-        - выход на уровень вверх
-        - в пределах рабочей папки
-        """
+        
         self.storage.add_path(filename)
         current_path = self.storage.path
 
